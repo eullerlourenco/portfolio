@@ -1,0 +1,31 @@
+<template>
+    <header class="sticky top-0 z-10 backdrop-blur-md border-b border-gray-800 dark:text-gray-300">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold text-gray-900 dark:text-white">Euller Lourenço</h1>
+            <nav class="hidden md:flex space-x-7">
+                <a href="#about" class="nav-item">Sobre</a>
+                <a href="#projects" class="nav-item">Projetos</a>
+                <a href="#skills" class="nav-item">Habilidades</a>
+                <a href="#education" class="nav-item">Educação</a>
+                <a href="#contact" class="nav-item">Contato</a>
+            </nav>
+            <button @click="toggleMode" class="ml-4 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 hover:cursor-pointer ease-in-out duration-300">
+                <Sun v-if="isDarkMode" class="h-5 w-5 text-yellow-400" />
+                <Moon v-else class="h-5 w-5 text-gray-700" />
+            </button>
+        </div>
+    </header>
+</template>
+
+<script setup>
+
+import { ref } from 'vue';
+import { Sun, Moon } from 'lucide-vue-next';
+
+const isDarkMode = ref(true);
+
+
+function toggleMode() {
+}
+
+</script>
