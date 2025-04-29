@@ -13,7 +13,9 @@
                     Apaixonado por criar experiências digitais incríveis e soluções inovadoras.
                 </p>
                 <div class="flex space-x-4">
-                    <Button>Ver Projetos</Button>
+                    <a href="#projects" class="btn">
+                        Ver Projetos
+                    </a>
                     <div class="mx-4 flex items-center space-x-6">
                         <a href="https://www.linkedin.com/in/eullerlourenco/" class="hero-icon" target="_blank"><Linkedin /></a>
                         <a href="https://github.com/eullerlourenco/" class="hero-icon" target="_blank"><Github /></a>
@@ -35,7 +37,7 @@
 import Button from '../partials/Button.vue';
 import ButtonOutline from '../partials/ButtonOutline.vue';
 import photo from '../../images/photo.jpg';
-import { Linkedin, Github, Mail, ChevronRight } from 'lucide-vue-next'
+import { Linkedin, Github, Mail, ChevronRight, ArrowRight } from 'lucide-vue-next'
 
 
 
